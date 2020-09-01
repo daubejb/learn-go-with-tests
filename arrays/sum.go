@@ -1,4 +1,4 @@
-package main
+package arrays
 
 // Sum takes an array of integers and returns their sum
 func Sum(numbers []int) int {
