@@ -7,6 +7,17 @@ type Shape interface {
 	Area() float64
 }
 
+//Triangle - represents a triangle's base and height
+type Triangle struct {
+	Base   float64
+	Height float64
+}
+
+// Area - returns the are of a triangle given a Triangle
+func (t Triangle) Area() float64 {
+	return 0.5 * (t.Base * t.Height)
+}
+
 // Rectangle - represents a rectangle by specifying its width and height
 type Rectangle struct {
 	Width  float64
