@@ -8,7 +8,7 @@ func TestWallet(t *testing.T) {
 
 	wallet.Deposit(10)
 
-	got := wallet.Balence()
+	got := wallet.Balance()
 	want := 10
 
 	if got != want {
