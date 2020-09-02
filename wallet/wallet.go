@@ -2,18 +2,17 @@ package wallet
 
 import "fmt"
 
-// Wallet - contains a balance
+type Bitcoin int
+
 type Wallet struct {
-	balance int
+	balance Bitcoin
 }
 
-// Deposit - puts money into a wallet
-func (w *Wallet) Deposit(amount int) {
+func (w *Wallet) Deposit(amount Bitcoin) {
 	fmt.Printf("address of balance in Deposit is %v \n", &w.balance)
 	w.balance += amount
 }
 
-// Balance - retrieves the balance of a wallet
-func (w *Wallet) Balance() int {
+func (w *Wallet) Balance() Bitcoin {
 	return w.balance
 }
